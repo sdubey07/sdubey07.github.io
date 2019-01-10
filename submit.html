@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.form-all {
+background: url('C:/Users/Sanjay Tiwari/Desktop/10.jpg')
+no-repeat;
+} 
+
+</style>
+</head>
+<body>
+<h2><center>Write-up Submission Form</center></h2>
+<p>1) Make sure your write-ups are not published and are not plagiarized</p>
+<p>2) Don't use short forms of words</p>
+<p>3) Your write-ups will be reviewd and posted only if selected by our editors.</p>
+<p>4) If you want to be anonymous mention "Anonymous" in the space provided for name.</p>
+<p>5) Be Patient and wait for your turn.</p>
+<p>6) Please mention the category of your post</p>
+
+<p>Microtale: Write us a tale you want to tell.
+Word limit: 30(max.)</p>
+<p>Musings: 
+You find simple words boring? then add some rhythm to it just like music
+Word limit: 40 (max.)</p>
+
+
+<p>Snippet
+Microtale is not enough for your story? ok,fine .. don't wait , just write a snippet.
+Word limit: 40(max.)
+</p>
+
+<p>Poem
+Rhyme or no rhyme , just create a magic through your words that even stops time
+Word limit: 2100 characters
+
+.</p> 
+<p>Sayings:
+Don't let your thoughts die in your head, share with us and get many people inspired.
+word limit: 30(max.)</p> 
+
+<p>Story:
+Don't hesitate, share it all with us. For stories we don't ask in short, number of words does not matter but characters does.
+Word limit: 2100 characters</p>
+
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+	<input type="text" id="fname" name="firstname" placeholder="Your name..">        
+      </div>
+	</div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="state">State</label>
+      </div>
+      <div class="col-75">
+        <select id="states" name="states">
+          <option value="Andhra Pradesh">Andhra Pradesh</option>
+          <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+        <option value="Assam">Assam</option>
+<option value="Bihar">Bihar</option>
+<option value="Chhattisgarh">Chhattisgarh</option>
+<option value="Goa">Goa</option>
+<option value="Gujarat">Gujarat</option>
+<option value="Haryana">Haryana</option>
+<option value="Himachal Pradesh">Himachal Pradesh</option>
+<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+<option value="Jharkhand">Jharkhand</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Kerala">Kerala</option>
+<option value="Madhya Pradesh">Madhya Pradesh</option>
+<option value="Maharashtra">Maharashtra	</option>
+<option value="Manipur">Manipur</option>
+<option value="Meghalaya">Meghalaya</option>
+<option value="Mizoram">Mizoram</option>
+<option value="Nagaland">Nagaland</option>
+<option value="Odisha">Odisha</option>
+<option value="Punjab">Punjab</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Sikkim">Sikkim</option>
+<option value="Tamil Nadu">Tamil Nadu</option>
+<option value="Telangana">Telangana</option>
+<option value="Tripura">Tripura</option>
+<option value="Uttar Pradesh">Uttar Pradesh</option>
+<option value="Uttarakhand">Uttarakhand	</option>
+<option value="West Bengal">West Bengal</option>
+	</select>
+      </div>
+    </div>
+
+<div class="row">
+      <div class="col-25">
+        <label for="city">City</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="city" name="City" placeholder="Enter Your City..">
+      </div>
+        </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Pen Down Your Feelings</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="Pen Down Your Feelings" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
